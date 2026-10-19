@@ -1,0 +1,710 @@
+
+ =========================================================
+  LEGIONFORGE 7.3.5.26124 - Установка
+ =========================================================
+  Папка сервера: D:\LegionForge
+
+ [OK] Права администратора есть.
+  [OK] Repaired line endings/encoding of 1 file(s).
+ [OK] MySQL: D:\LegionForge\tools\mysql\server\bin\mysql.exe
+ [*] Запускаю портативный MySQL...
+  [OK] MySQL portable: D:\LegionForge\tools\mysql\server
+  [OK] MySQL запущен (порт 3306).
+  [OK] MySQL administrator: admin@legionforge.ru
+  [OK] bootstrap_tools завершён.
+ [OK] MySQL слушает порт 3306.
+
+ [*] Проверка доступа к MySQL...
+ [OK] Доступ к MySQL есть.
+
+ [*] Создание баз auth, characters, world, hotfixes и учётной записи...
+ [OK] Базы готовы, учётная запись MySQL: admin@legionforge.ru / legionforge
+
+ [*] Импорт баз данных (только пустые)...
+     - база auth уже содержит таблиц: 54 - пропуск, данные сохранены.
+     - база characters уже содержит таблиц: 188 - пропуск, данные сохранены.
+     - world и hotfixes уже содержат таблицы - импорт пропущен, данные сохранены.
+
+ [*] Обновления из sql\updates (каждое - один раз)...
+  [OK] auth <- 2023_03_04_version.sql
+  [OK] characters <- 2023_03_01_default_enable_2fa_backpack_slots.sql
+  [OK] characters <- 2023_03_04_version.sql
+  [OK] characters <- 2024_24_09_custom_solocraft_character_stats.sql
+  [OK] characters <- 2025_10_03_ahbot_market_price.sql
+  [OK] world <- 0002_allied_races_achievement_unlock.sql
+  [OK] world <- 0009_wod_garrison_fixes.sql
+  [OK] world <- 0029_dungeon_boss_loot.sql
+  [OK] world <- 2022_06_28_00_world.sql
+  [OK] world <- 2022_06_28_01_world.sql
+  [OK] world <- 2022_07_31_00_world.sql
+  [OK] world <- 2022_08_01_00_world.sql
+  [OK] world <- 2022_08_01_01_world.sql
+  [OK] world <- 2022_08_02_00_world.sql
+  [OK] world <- 2022_08_03_00_world.sql
+  [OK] world <- 2022_08_03_01_world.sql
+  [OK] world <- 2022_08_04_00_world.sql
+  [OK] world <- 2022_08_04_01_world.sql
+  [OK] world <- 2022_08_04_02_world.sql
+  [OK] world <- 2022_08_05_00_world.sql
+  [OK] world <- 2022_08_05_01_world.sql
+  [OK] world <- 2022_08_06_00_world.sql
+  [OK] world <- 2022_08_07_00_world.sql
+  [OK] world <- 2022_08_07_01_world.sql
+  [OK] world <- 2022_08_07_02_world.sql
+  [OK] world <- 2022_08_07_03_world.sql
+  [OK] world <- 2022_08_08_00_world.sql
+  [OK] world <- 2022_08_09_00_world.sql
+  [OK] world <- 2022_08_09_01_world.sql
+  [OK] world <- 2022_08_10_00_world.sql
+  [OK] world <- 2022_08_12_00_world.sql
+  [OK] world <- 2022_08_13_00_world.sql
+  [OK] world <- 2022_08_13_01_world.sql
+  [OK] world <- 2022_08_13_02_world.sql
+  [OK] world <- 2022_12_26_01_creature_formations.sql
+  [OK] world <- 2022_12_26_02_waypoint_data.sql
+  [OK] world <- 2022_12_26_autobroadcast.sql
+  [OK] world <- 2022_12_26_battlepay_display_info_locales.sql
+  [OK] world <- 2022_12_26_battlepay_product_group_locales.sql
+  [OK] world <- 2023_01_17_Stormwind_City_Patroller.sql
+  [OK] world <- 2023_01_18_Thomas_Miller_Craggle_Wobbletop.sql
+  [OK] world <- 2023_01_21_00_world_stormwind_Leria_Nightwind.sql
+  [OK] world <- 2023_01_21_Valiance_Keep_Rifleman.sql
+  [OK] world <- 2023_01_23_Matthew_Deyling.sql
+  [OK] world <- 2023_01_23_Miss_Danna_and_children.sql
+  [OK] world <- 2023_01_27_fix_npc.sql
+  [OK] world <- 2023_02_26_spell_proc.sql
+  [OK] world <- 2023_03_06_legion_intro_quest_fixes.sql
+  [OK] world <- 2023_03_09_npc_trainer.sql
+  [OK] world <- 2023_04_02_quest_autocomplete.sql
+  [OK] world <- 2024_01_01_00.sql
+  [OK] world <- 2024_08_31_01_world.sql
+  [OK] world <- 2024_08_31_02_world.sql
+  [OK] world <- 2024_09_01_00_world_2017_04_09_00_world.sql
+  [OK] world <- 2024_09_05_fix_dungeon_levels.sql
+  [OK] world <- 2024_09_05_more_quest_drops_and_creature_corrections.sql
+  [OK] world <- 2024_09_19_01_world_2017_04_01_03_world.sql
+  [OK] world <- 2024_09_19_02_world_2017_03_31_00_world.sql
+  [OK] world <- 2024_09_19_03_world.sql
+  [OK] world <- 2024_09_26_00.sql
+  [OK] world <- 2024_09_26_horde_quest_drops_and_creature_corrections.sql
+  [OK] world <- 2024_10_25_alliance_establish_your_garrison.sql
+  [OK] world <- 2024_11_02_quest_template_scaling_fixes.sql
+  [OK] world <- 2024_12_04_fix_undead_start.sql
+  [OK] world <- 2025_10_03_world__creature_spawn_dist.sql
+  [OK] world <- 2025-01-10.sql
+  [OK] world <- 2023_08_21_01_world.sql
+  [OK] hotfixes <- 2024_05_10_fix_vendor_prices.sql
+  [OK] hotfixes <- 0001_fix_garrison_mission_db_structure.sql
+  [OK] sql\updates: применено 69, уже было 0, с предупреждениями 0.
+
+ [*] Патчи LegionForge: имя мира, союзные расы, мини-боссы, предметы...
+  [*] 10_legionforge_realm.sql -> auth
+  [*] 105_legionforge_client_races_real_ids.sql -> world
+      raceId    raceName        donorRace       team    createInfoRows  levelStatRows   startItemRows   actionBarRows  unlockRows
+      12        Haranir (Harronir), Horde, donor Troll  8       HORDE   10      1122    0       38      1
+      13        Dracthyr Visage, Alliance, donor Human  1       ALLIANCE        9       1023    0       27      1
+      14        Broken, neutral, donor Human    1       NEUTRAL 10      1122    0       42      1
+      15        Vulpera, Horde, donor Goblin    9       HORDE   8       924     0       36      1
+      16        Vrykul, neutral, donor Human    1       NEUTRAL 9       1023    0       27      1
+      17        Dark Iron Dwarf, Alliance, donor Dwarf  3       ALLIANCE        10      1122    0       35      1
+      18        Kul Tiran, Alliance, donor Human        1       ALLIANCE        9       1023    0       27      1
+      19        Taunka, neutral, donor Human    1       NEUTRAL 11      1221    0       45      1
+      20        Mag'har Orc, Horde, donor Orc   2       HORDE   8       924     0       30      1
+      21        Zandalari Troll, Horde, donor Troll     8       HORDE   10      1122    0       38      1
+      33        ThinHuman, neutral, donor Human 1       NEUTRAL 9       1023    0       27      1
+      38        Fel Orc (no CharSections), neutral, donor Human 1       NEUTRAL 9       1023    0       27      1
+      39        Naga (no CharSections), neutral, donor Human    1       NEUTRAL 9       1023    0       27      1
+      40        Skeleton (no CharSections), neutral, donor Human        1       NEUTRAL 9       1023    0       27     1      41        Tuskarr (no CharSections), neutral, donor Human 1       NEUTRAL 9       1023    0       27      1
+      42        Forest Troll (no CharSections), neutral, donor Human    1       NEUTRAL 9       1023    0       27     1      43        Northrend Skeleton (no CharSections), neutral, donor Human      1       NEUTRAL 9       1023    0      27       1
+      44        Ice Troll (no CharSections), neutral, donor Human       1       NEUTRAL 9       1023    0       27     1  [*] 48_legion_allied_races.sql -> world
+  [*] 49_legion_allied_races_hotbar.sql -> world
+  [*] 111_remove_wrong_race_slots.sql -> world
+      check     remaining
+      playercreateinfo rows for non-client races 31,32,34-37    0
+      race_unlock rows for non-client races     0
+      playercreateinfo rows for race 33 (ThinHuman)     9
+      player_levelstats rows for race 33        1023
+  [*] 40_legionforge_items.sql -> world
+  [*] 43_legionforge_upgrade_tokens.sql -> world
+  [*] 44_legionforge_upgrade_limits.sql -> world
+  [*] 45_legionforge_ancient_knowledge.sql -> world
+  [*] 41_legionforge_minibosses.sql -> world
+  [*] 42_legionforge_miniboss_loot.sql -> world
+  [*] 106_legionforge_form_scrolls.sql -> world
+      check     count
+      scrolls registered        14
+      scrolls with invalid form_id      0
+      vendor entries    14
+  [*] 107_legionforge_demon_scrolls_and_form_defaults.sql -> world
+      check     count
+      demon scrolls registered  11
+      default form models       4
+      demon scrolls without script      11
+      demon scrolls with unknown pet entry      0
+      vendor entries for demon scrolls  11
+  [*] 110_legionforge_log_cleanup_26124.sql -> world
+      check     remaining
+      playercreateinfo_spell bad races  0
+      orphan script_waypoint    0
+      smart_scripts invalid action 206  0
+      arena season 15 rows      1
+  [OK] Все кастомные патчи применены (14 шт.).
+  [OK] Схема auth соответствует ядру (account, battlenet_accounts).
+
+ [*] Проверка программ: worldserver.exe, bnetserver.exe
+ [*] Программ нет - автоматическая сборка из core\ (первый раз 30-90 минут).
+     CMake, Boost, OpenSSL, Visual Studio Build Tools скачаются сами.
+[19:09:25] Шаг 1/4. Портативные инструменты...
+  [OK] CMake: D:\LegionForge\tools\cmake\bin\cmake.exe
+  [OK] MySQL portable: D:\LegionForge\tools\mysql\server
+  [OK] Boost: D:\LegionForge\tools\boost_1_83_0
+  [OK] OpenSSL: D:\LegionForge\tools\openssl
+  [OK] bootstrap_tools завершён.
+[19:09:26] Компилятор: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools
+[19:09:26] Шаг 2/4. Генерация проекта CMake...
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+-- The C compiler identification is MSVC 19.44.35228.0
+-- The CXX compiler identification is MSVC 19.44.35228.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detected 64-bit platform
+-- MSVC: 64-bit platform, enforced -D_WIN64 parameter
+-- MSVC: Enabled increased number of sections in object files
+-- MSVC: Enabled increased number of sections in object files
+-- MSVC: Overloaded standard names
+-- MSVC: Disabled NON-SECURE warnings
+-- MSVC: Disabled POSIX warnings
+-- MSVC: Disabled generic compiletime warnings
+-- Found MySQL library: D:/LegionForge/tools/mysql/server/lib/libmysql.lib
+-- Found MySQL headers: D:/LegionForge/tools/mysql/server/include
+System.Management.Automation.RemoteException
+* NordrassilCore revision   : last 2024-10-10 00:00:00 +0000 (last branch)
+System.Management.Automation.RemoteException
+* Install core to        : C:/Program Files/LegionCore
+System.Management.Automation.RemoteException
+* Build world/auth       : Yes (default)
+* Build with scripts     : Yes (default)
+* Build map/vmap tools   : Yes
+* Build core w/PCH       : Yes (default)
+* Build scripts w/PCH    : Yes (default)
+* Show compile-warnings  : No  (default)
+* Use coreside debug     : No  (default)
+* Show source tree       : Yes - "hierarchical"
+System.Management.Automation.RemoteException
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Boost version: 1.83.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   thread
+--   program_options
+--   iostreams
+--   regex
+-- Performing Test boost_filesystem_copy_links_without_NO_SCOPED_ENUM
+-- Performing Test boost_filesystem_copy_links_without_NO_SCOPED_ENUM - Success
+-- Looking for open
+-- Looking for open - found
+-- Found OpenSSL: D:/LegionForge/tools/openssl/lib/VC/x64/MD/libcrypto.lib (found version "3.5.9") found components: Crypto SSL
+-- Found OpenSSL library: D:/LegionForge/tools/openssl/lib/VC/x64/MD/libssl.lib;D:/LegionForge/tools/openssl/lib/VC/x64/MD/libcrypto.lib
+-- Found OpenSSL headers: D:/LegionForge/tools/openssl/include
+-- SCRIPT PREPARATIONS
+--   -> Prepared: Spells
+--   -> Prepared: Commands
+--   -> Prepared: BrawlersGuild
+--   -> Prepared: BattlePay
+--   -> Prepared: Custom
+--   -> Prepared: Kalimdor
+--   -> Prepared: Maelstrom
+--   -> Prepared: Northrend
+--   -> Prepared: OutdoorPvP
+--   -> Prepared: Outland
+--   -> Prepared: PetBattle
+--   -> Prepared: World
+--   -> Prepared: Draenor
+--   -> Prepared: EasternKingdoms
+--   -> Prepared: Legion
+--   -> Prepared: Outland
+--   -> Prepared: Pandaria
+--   -> Prepared: Scenario
+--   -> Prepared: Maelstrom
+-- Configuring done (13.5s)
+-- Generating done (2.9s)
+-- Build files have been written to: D:/LegionForge/build
+[19:09:42] Шаг 3/4. Компиляция (первый раз - долго)...
+Версия MSBuild 17.14.51+25f168cee для .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule D:/LegionForge/core/src/genrev/CMakeLists.txt
+  Building Custom Rule D:/LegionForge/core/dep/zlib/CMakeLists.txt
+  Building Custom Rule D:/LegionForge/core/dep/cds/CMakeLists.txt
+  adler32.c
+  compress.c
+  dhp.cpp
+  crc32.c
+  dllmain.cpp
+  hp.cpp
+  deflate.c
+  init.cpp
+  infback.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  trees.c
+  uncompr.c
+  zutil.c
+  Building Custom Rule D:/LegionForge/core/dep/fmt/CMakeLists.txt
+  Building Custom Rule D:/LegionForge/core/dep/gsoap/CMakeLists.txt
+  Building Custom Rule D:/LegionForge/core/dep/bzip2/CMakeLists.txt
+  thread_data.cpp
+  Building Custom Rule D:/LegionForge/core/dep/protobuf/CMakeLists.txt
+  topology_hpux.cpp
+  topology_linux.cpp
+  topology_osx.cpp
+  format.cc
+  ostream.cc
+  printf.cc
+  posix.cc
+  httpget.cpp
+  httppost.cpp
+  soapC.cpp
+  soapServer.cpp
+  blocksort.c
+  urcu_gp.cpp
+  bzlib.c
+  compress.c
+  crctable.c
+  urcu_sh.cpp
+  importer.cc
+  parser.cc
+  descriptor.cc
+  descriptor.pb.cc
+  decompress.c
+  zlib.vcxproj -> D:\LegionForge\build\dep\zlib\Release\zlib.lib
+  huffman.c
+  randtable.c
+  stdsoap2.cpp
+  descriptor_database.cc
+  cds.vcxproj -> D:\LegionForge\build\dep\cds\Release\cds.lib
+  dynamic_message.cc
+  extension_set.cc
+  Building Custom Rule D:/LegionForge/core/dep/g3dlite/CMakeLists.txt
+  extension_set_heavy.cc
+  generated_message_reflection.cc
+  generated_message_util.cc
+  fmt.vcxproj -> D:\LegionForge\build\dep\fmt\Release\fmt.lib
+  bzip2.vcxproj -> D:\LegionForge\build\dep\bzip2\Release\bzip2.lib
+  coded_stream.cc
+  gzip_stream.cc
+  printer.cc
+  gsoap.vcxproj -> D:\LegionForge\build\dep\gsoap\Release\gsoap.lib
+  Building Custom Rule D:/LegionForge/core/dep/CascLib/CMakeLists.txt
+  strtod.cc
+  Building Custom Rule D:/LegionForge/core/dep/recastnavigation/Recast/CMakeLists.txt
+  tokenizer.cc
+  zero_copy_stream.cc
+  zero_copy_stream_impl.cc
+  zero_copy_stream_impl_lite.cc
+  Recast.cpp
+  RecastAlloc.cpp
+  RecastArea.cpp
+  RecastContour.cpp
+  Building Custom Rule D:/LegionForge/core/dep/recastnavigation/Detour/CMakeLists.txt
+  RecastFilter.cpp
+  message.cc
+  AABox.cpp
+  RecastLayers.cpp
+  Any.cpp
+  AnyTableReader.cpp
+  BinaryFormat.cpp
+  RecastMesh.cpp
+  RecastMeshDetail.cpp
+  message_lite.cc
+  RecastRasterization.cpp
+  reflection_ops.cc
+  repeated_field.cc
+  RecastRegion.cpp
+  service.cc
+  common.cc
+  BinaryInput.cpp
+  once.cc
+  BinaryOutput.cpp
+  stringprintf.cc
+  structurally_valid.cc
+  Box.cpp
+  DetourAlloc.cpp
+  DetourCommon.cpp
+  Recast.vcxproj -> D:\LegionForge\build\dep\recastnavigation\Recast\Release\Recast.lib
+  DetourNavMesh.cpp
+  DetourNavMeshBuilder.cpp
+  strutil.cc
+  substitute.cc
+  DetourNavMeshQuery.cpp
+  DetourNode.cpp
+  text_format.cc
+  unknown_field_set.cc
+  Common.cpp
+  Directory.cpp
+  DumpContext.cpp
+  DynamicArray.cpp
+  wire_format.cc
+  Capsule.cpp
+  wire_format_lite.cc
+  CollisionDetection.cpp
+  CoordinateFrame.cpp
+  FileStream.cpp
+  atomicops_internals_x86_msvc.cc
+  ListFile.cpp
+  Map.cpp
+  RootHandler.cpp
+  Crypto.cpp
+  CascCommon.cpp
+  CascDecompress.cpp
+  CascDecrypt.cpp
+  CascDumpData.cpp
+  Cylinder.cpp
+  Detour.vcxproj -> D:\LegionForge\build\dep\recastnavigation\Detour\Release\Detour.lib
+  debugAssert.cpp
+  CascFiles.cpp
+  CascFindFile.cpp
+  FileSystem.cpp
+  CascOpenFile.cpp
+  CascOpenStorage.cpp
+  fileutils.cpp
+  CascReadFile.cpp
+  CascRootFile_Diablo3.cpp
+  CascRootFile_Mndx.cpp
+  format.cpp
+  CascRootFile_Ovr.cpp
+  g3dfnmatch.cpp
+  protobuf.vcxproj -> D:\LegionForge\build\dep\protobuf\Release\protobuf.lib
+  CascRootFile_SC1.cpp
+  CascRootFile_WoW6.cpp
+  g3dmath.cpp
+  GThread.cpp
+  Line.cpp
+  LineSegment.cpp
+  lookup3.c
+  hash_memory.c
+  md5.c
+  crypt_argchk.c
+  Log.cpp
+  crypt_hash_descriptor.c
+  crypt_hash_is_valid.c
+  crypt_libc.c
+  Matrix3.cpp
+  casc.vcxproj -> D:\LegionForge\build\dep\CascLib\Release\casc.lib
+  Matrix4.cpp
+  MemoryManager.cpp
+  PhysicsFrame.cpp
+  Plane.cpp
+  prompt.cpp
+  Quat.cpp
+  Random.cpp
+  Ray.cpp
+  RegistryUtil.cpp
+  Sphere.cpp
+  stringutils.cpp
+  System.cpp
+  TextInput.cpp
+  TextOutput.cpp
+  Triangle.cpp
+  uint128.cpp
+  UprightFrame.cpp
+  Vector2.cpp
+  Vector3.cpp
+  Vector4.cpp
+  g3dlib.vcxproj -> D:\LegionForge\build\dep\g3dlite\Release\g3dlib.lib
+  Building Custom Rule D:/LegionForge/core/src/common/CMakeLists.txt
+  cmake_pch.cxx
+  Common.cpp
+  GitRevision.cpp
+  BuiltInConfig.cpp
+  Config.cpp
+  ARC4.cpp
+  BigNumber.cpp
+  HmacHash.cpp
+  OpenSSLCrypto.cpp
+  RSA.cpp
+  SHA1.cpp
+  SHA256.cpp
+  PacketCrypt.cpp
+  WorldPacketCrypt.cpp
+  AdhocStatement.cpp
+  DatabaseEnv.cpp
+  DatabaseWorker.cpp
+  Field.cpp
+  MySQLConnection.cpp
+  MySQLThreading.cpp
+  PreparedStatement.cpp
+  QueryCallback.cpp
+  QueryCallbackProcessor.cpp
+  QueryHolder.cpp
+  QueryResult.cpp
+  Transaction.cpp
+  CharacterDatabase.cpp
+  HotfixDatabase.cpp
+  LoginDatabase.cpp
+  WorldDatabase.cpp
+  Appender.cpp
+  AppenderConsole.cpp
+  AppenderDB.cpp
+  AppenderFile.cpp
+  Log.cpp
+  LogOperation.cpp
+  Logger.cpp
+  AchievPoolMgr.cpp
+  ThreadPoolMgr.cpp
+  Banner.cpp
+  EventProcessor.cpp
+  FunctionProcessor.cpp
+  MessageBuffer.cpp
+  Random.cpp
+  StartProcess.cpp
+  TaskScheduler.cpp
+  Util.cpp
+  WowTime.cpp
+  segvcatch.cpp
+  BoundingIntervalHierarchy.cpp
+  DynamicTree.cpp
+  MMapFactory.cpp
+  MMapManager.cpp
+  VMapFactory.cpp
+  VMapManager2.cpp
+  MapTree.cpp
+  TileAssembler.cpp
+  GameObjectModel.cpp
+  ModelInstance.cpp
+  WorldModel.cpp
+  Errors.cpp
+  common.vcxproj -> D:\LegionForge\build\src\common\Release\common.lib
+  Building Custom Rule D:/LegionForge/core/src/tools/vmap4_assembler/CMakeLists.txt
+  Building Custom Rule D:/LegionForge/core/src/tools/map_extractor/CMakeLists.txt
+  Building Custom Rule D:/LegionForge/core/src/tools/vmap4_extractor/CMakeLists.txt
+  System.cpp
+  adtfile.cpp
+  VMapAssembler.cpp
+  Building Custom Rule D:/LegionForge/core/src/server/proto/CMakeLists.txt
+  cmake_pch.cxx
+  dbcfile.cpp
+  gameobject_extract.cpp
+  vmap4assembler.vcxproj -> D:\LegionForge\build\bin\Release\vmap4assembler.exe
+  dbcfile.cpp
+  account_service.pb.cc
+  account_types.pb.cc
+  attribute_types.pb.cc
+  authentication_service.pb.cc
+  model.cpp
+  loadlib.cpp
+  Создание кода...
+D:\LegionForge\core\src\tools\vmap4_extractor\model.cpp(88,20): warning C4477: "printf": в строке форматирования "%u" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t" [D:\LegionForge\build\src\tools\vmap4_extractor\vmap4extractor.vcxproj]
+      D:\LegionForge\core\src\tools\vmap4_extractor\model.cpp(88,20):
+      рекомендуется использовать "%zu" в строке форматирования
+
+  mpqfile.cpp
+  vmapexport.cpp
+  challenge_service.pb.cc
+D:\LegionForge\core\src\tools\vmap4_extractor\vmapexport.cpp(27,9): warning C4005: WIN32_LEAN_AND_MEAN: изменение макроопределения [D:\LegionForge\build\src\tools\vmap4_extractor\vmap4extractor.vcxproj]
+      D:\LegionForge\core\src\tools\vmap4_extractor\vmapexport.cpp(27,9):
+      "WIN32_LEAN_AND_MEAN" ранее объявлен в командной строке
+
+  mapextractor.vcxproj -> D:\LegionForge\build\bin\Release\mapextractor.exe
+  channel_service.pb.cc
+  channel_types.pb.cc
+  wdtfile.cpp
+  wmo.cpp
+  connection_service.pb.cc
+  content_handle_types.pb.cc
+  Создание кода...
+  entity_types.pb.cc
+  friends_service.pb.cc
+  vmap4extractor.vcxproj -> D:\LegionForge\build\bin\Release\vmap4extractor.exe
+  friends_types.pb.cc
+  game_utilities_service.pb.cc
+  game_utilities_types.pb.cc
+  invitation_types.pb.cc
+  notification_types.pb.cc
+  presence_service.pb.cc
+  presence_types.pb.cc
+  profanity_filter_config.pb.cc
+  report_service.pb.cc
+  report_types.pb.cc
+  resource_service.pb.cc
+  role_types.pb.cc
+  rpc_config.pb.cc
+  rpc_types.pb.cc
+  user_manager_service.pb.cc
+  user_manager_types.pb.cc
+  channel_id.pb.cc
+  field_options.pb.cc
+  method_options.pb.cc
+  service_options.pb.cc
+  Login.pb.cc
+  RealmList.pb.cc
+  proto.vcxproj -> D:\LegionForge\build\src\server\proto\Release\proto.lib
+  Building Custom Rule D:/LegionForge/core/src/server/shared/CMakeLists.txt
+  cmake_pch.cxx
+  DB2DatabaseLoader.cpp
+  DB2FileLoader.cpp
+  DB2Meta.cpp
+  DB2Store.cpp
+  ProtobufJSON.cpp
+  ByteBuffer.cpp
+  Realm.cpp
+  RealmList.cpp
+D:\LegionForge\core\src\server\shared\Realm\RealmList.h(46,15): error C2371: boost::asio::io_service: переопределение; различные базовые типы [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      D:\LegionForge\tools\boost_1_83_0\boost\asio\io_service.hpp(27,20):
+       см. объявление "boost::asio::io_service"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.h(116,38): error C2039: "tcp_resolver": не является членом "boost::asio::ip". [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      D:\LegionForge\tools\boost_1_83_0\boost\asio\ip\v6_only.hpp(25,11):
+       см. объявление "boost::asio::ip"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.h(116,38): error C2065: tcp_resolver: необъявленный идентификатор [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.h(116,10): error C2923: std::unique_ptr: "tcp_resolver" не является допустимым аргументом типа шаблон для параметра "_Ty" [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      D:\LegionForge\core\src\server\shared\Realm\RealmList.h(116,38):
+       см. объявление "tcp_resolver"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.h(116,10): error C2976: std::unique_ptr: слишком мало аргументов шаблон [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+       см. объявление "std::unique_ptr"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(36,1): error C2512: std::unique_ptr: нет подходящего конструктора по умолчанию [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+       см. объявление "std::unique_ptr"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(51,29): error C2672: "Trinity::make_unique": не найдена соответствующая перегруженная функция [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      D:\LegionForge\core\src\common\Common.h(238,42):
+      может быть "_Unique_if<T>::_Known_bound Trinity::make_unique(Args ...)"
+          D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(51,29):
+          недопустимые явные аргументы шаблон для "_Unique_if<T>::_Known_bound Trinity::make_unique(Args ...)"
+              D:\LegionForge\core\src\common\Common.h(238,42):
+              _Known_bound: не является прямым или косвенным базовым классом для "Trinity::_Unique_if<boost::asio::deadline_timer>"
+      D:\LegionForge\core\src\common\Common.h(232,44):
+      или       "_Unique_if<T>::_Unknown_bound Trinity::make_unique(size_t)"
+          D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(51,29):
+          недопустимые явные аргументы шаблон для "_Unique_if<T>::_Unknown_bound Trinity::make_unique(size_t)"
+              D:\LegionForge\core\src\common\Common.h(232,44):
+              _Unknown_bound: не является прямым или косвенным базовым классом для "Trinity::_Unique_if<boost::asio::deadline_timer>"
+      D:\LegionForge\core\src\common\Common.h(227,44):
+      или       "_Unique_if<T>::_Single_object Trinity::make_unique(Args ...)"
+          D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(51,29):
+          Сбой при специализации функции-шаблона "_Unique_if<T>::_Single_object Trinity::make_unique(Args ...)"
+              D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(51,29):
+              Со следующими аргументами шаблона:
+                  D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(51,29):
+                  "T=boost::asio::deadline_timer"
+                  D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(51,29):
+                  "Args={boost::asio::io_service &}"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(52,26): error C2672: "Trinity::make_unique": не найдена соответствующая перегруженная функция [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      D:\LegionForge\core\src\common\Common.h(238,42):
+      может быть "_Unique_if<T>::_Known_bound Trinity::make_unique(Args ...)"
+          D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(52,26):
+          недопустимые явные аргументы шаблон для "_Unique_if<T>::_Known_bound Trinity::make_unique(Args ...)"
+              D:\LegionForge\core\src\common\Common.h(238,42):
+              _Known_bound: не является прямым или косвенным базовым классом для "Trinity::_Unique_if<boost::asio::ip::tcp::resolver>"
+      D:\LegionForge\core\src\common\Common.h(232,44):
+      или       "_Unique_if<T>::_Unknown_bound Trinity::make_unique(size_t)"
+          D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(52,26):
+          недопустимые явные аргументы шаблон для "_Unique_if<T>::_Unknown_bound Trinity::make_unique(size_t)"
+              D:\LegionForge\core\src\common\Common.h(232,44):
+              _Unknown_bound: не является прямым или косвенным базовым классом для "Trinity::_Unique_if<boost::asio::ip::tcp::resolver>"
+      D:\LegionForge\core\src\common\Common.h(227,44):
+      или       "_Unique_if<T>::_Single_object Trinity::make_unique(Args ...)"
+          D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(52,26):
+          Сбой при специализации функции-шаблона "_Unique_if<T>::_Single_object Trinity::make_unique(Args ...)"
+              D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(52,26):
+              Со следующими аргументами шаблона:
+                  D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(52,26):
+                  "T=boost::asio::ip::tcp::resolver"
+                  D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(52,26):
+                  "Args={boost::asio::io_service &}"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(158,69): error C2678: бинарный "->": не найден оператор, принимающий левый операнд типа "std::unique_ptr" (или приемлемое преобразование отсутствует) [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\memory(3452,37):
+      может быть "_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const"
+          D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(158,69):
+          _Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const: невозможно преобразовать указатель "this" из "std::unique_ptr" в "const std::unique_ptr<_Ty,_Dx> &"              D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(158,69):
+              Причина: невозможно преобразовать "std::unique_ptr" в "const std::unique_ptr<_Ty,_Dx>"
+              D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(158,69):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(158,69):
+      при попытке сопоставить список аргументов "(std::unique_ptr)"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(158,80): error C2039: "resolve": не является членом "std::unique_ptr". [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+       см. объявление "std::unique_ptr"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(169,28): error C2678: бинарный "->": не найден оператор, принимающий левый операнд типа "std::unique_ptr" (или приемлемое преобразование отсутствует) [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\memory(3452,37):
+      может быть "_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const"
+          D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(169,28):
+          _Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const: невозможно преобразовать указатель "this" из "std::unique_ptr" в "const std::unique_ptr<_Ty,_Dx> &"              D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(169,28):
+              Причина: невозможно преобразовать "std::unique_ptr" в "const std::unique_ptr<_Ty,_Dx>"
+              D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(169,28):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(169,28):
+      при попытке сопоставить список аргументов "(std::unique_ptr)"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(169,39): error C2039: "resolve": не является членом "std::unique_ptr". [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+       см. объявление "std::unique_ptr"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(180,28): error C2678: бинарный "->": не найден оператор, принимающий левый операнд типа "std::unique_ptr" (или приемлемое преобразование отсутствует) [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\memory(3452,37):
+      может быть "_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const"
+          D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(180,28):
+          _Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const: невозможно преобразовать указатель "this" из "std::unique_ptr" в "const std::unique_ptr<_Ty,_Dx> &"              D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(180,28):
+              Причина: невозможно преобразовать "std::unique_ptr" в "const std::unique_ptr<_Ty,_Dx>"
+              D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(180,28):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(180,28):
+      при попытке сопоставить список аргументов "(std::unique_ptr)"
+
+D:\LegionForge\core\src\server\shared\Realm\RealmList.cpp(180,39): error C2039: "resolve": не является членом "std::unique_ptr". [D:\LegionForge\build\src\server\shared\shared.vcxproj]
+  (компиляция исходного файла "../../../../core/src/server/shared/Realm/RealmList.cpp")
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+       см. объявление "std::unique_ptr"
+
+Компиляция завершилась с ошибкой (код 1) - см. build_log.txt
+At D:\LegionForge\scripts\build_server.ps1:95 char:18
++ ... rc -ne 0) { throw "Компиляция завершилась с ошибкой (код $rc) - см. b ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Компиляция заве.... build_log.txt:String) [], RuntimeException
+    + FullyQualifiedErrorId : Компиляция завершилась с ошибкой (код 1) - см. build_log.txt
+
+
+ [ОШИБКА] Сборка не удалась. Подробности: D:\LegionForge\build_log.txt
+
+ [ОШИБКА] Установка не завершена. Исправьте причину выше и запустите setup.bat снова.
+     Уже сделанные шаги повторно не выполняются.
+
+Press any key to continue . . .

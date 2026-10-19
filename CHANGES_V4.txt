@@ -1,0 +1,31 @@
+Changes relative to LegionForge_04_fixed_v3.zip
+Baseline SHA-256: 4967b6e42ed0bd7e3df7260e4f740c6e195e4e55b78c493f380ac40fd32974f9
+
+CHANGES_V4.txt
+FIXES_2026.md
+UPDATE_V4_RU.md
+VALIDATION_V4.md
+core/CMakeLists.txt
+core/cmake/macros/FindOpenSSL.cmake
+core/dep/boost/CMakeLists.txt
+core/dep/g3dlite/include/G3D/Intersect.h
+core/dep/g3dlite/include/G3D/Matrix3.h
+core/dep/g3dlite/include/G3D/Ray.h
+core/dep/g3dlite/source/CollisionDetection.cpp
+core/dep/g3dlite/source/license.cpp
+core/dep/process/CMakeLists.txt
+core/revision_data.h.in.cmake
+core/src/common/Cryptography/OpenSSLCrypto.cpp
+core/src/common/Cryptography/OpenSSLCrypto.h
+core/src/common/Database/DatabaseEnvFwd.h
+core/src/common/Database/MySQLCompat.h
+core/src/common/Database/PreparedStatement.cpp
+core/src/common/Database/QueryResult.cpp
+core/src/common/Database/QueryResult.h
+core/src/common/Utilities/StartProcess.cpp
+core/src/common/Utilities/WowTime.cpp
+core/tests/compat/CMakeLists.txt
+core/tests/compat/VALIDATION_OUTPUT_V4.txt
+core/tests/compat/dependency_compat.cpp
+core/tests/compat/test_openssl_selection.py
+scripts/build_server.ps1
